@@ -42,9 +42,34 @@ class ProvideFutureTargetsWrapper(Wrapper):
                 obs['global_lifelong_targets_xy'] = global_lifelong_targets_xy[idx]
         return observations, infos
 
+class CollisionsMetricWrapper(Wrapper):
+    def __init__(self, env):
+        super().__init__(env)
+        self._collisions = 0
+        self._previous_positions = None
+
+    def step(self, actions):
+        observations, rewards, terminated, truncated, infos = self.env.step(actions)
+        for i, obs in enumerate(observations):
+            if obs['xy'] == self._previous_positions[i] and actions[i] != 0:
+                self._collisions += 1
+        self._previous_positions = [obs['xy'] for obs in observations]
+        if all(terminated) or all(truncated):
+            if 'metrics' not in infos[0]:
+                infos[0]['metrics'] = {}
+            infos[0]['metrics'].update(collisions=self._collisions)
+        return observations, rewards, terminated, truncated, infos
+
+    def reset(self, **kwargs):
+        observations, info = self.env.reset(**kwargs)
+        self._collisions = 0
+        self._previous_positions = [obs['xy'] for obs in observations]
+        return observations, info
+
 def create_env_base(config):
     env = pogema_v0(grid_config=config)
     env = AgentsDensityWrapper(env)
+    env = CollisionsMetricWrapper(env)
     env = ProvideFutureTargetsWrapper(env)
     env = MultiMapWrapper(env)
     if config.with_animation:
