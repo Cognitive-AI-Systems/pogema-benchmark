@@ -15,6 +15,7 @@ from scrimp.inference import SCRIMPInference, SCRIMPInferenceConfig
 from follower.follower_python.inference import FollowerInference, FollowerInferenceConfig
 from follower.follower_python.preprocessing import follower_preprocessor
 from mamba.inference.utils import MAMBAInference, MAMBAInferenceConfig
+from mamba.preprocessing import mamba_preprocessor
 from lacam.inference import LacamInference, LacamInferenceConfig
 from mats_lp.inference import MATS_LPConfig, MATS_LPInference
 from dcc.inference import DCCInference, DCCInferenceConfig

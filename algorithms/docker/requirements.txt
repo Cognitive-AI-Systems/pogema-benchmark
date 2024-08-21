@@ -22,3 +22,4 @@ dask[distributed]
 loguru
 pogema-toolbox==0.1.0
 pogema==1.3.0
+ray~=1.13.0

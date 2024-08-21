@@ -41,22 +41,6 @@ class PogemaConfig(EnvConfig):
             "simple_benchmark_follower": follower_pogema_env,
             "mazes_benchmark_follower": follower_pogema_env_mazes,
             "benchmark_follower_pogema_env_mazes_random": follower_pogema_env_mazes_random,
-            "Easy8x8": pogema.Easy8x8,
-            "Normal8x8": pogema.Normal8x8,
-            "Hard8x8": pogema.Hard8x8,
-            "ExtraHard8x8": pogema.ExtraHard8x8,
-            "Easy16x16": pogema.Easy16x16,
-            "Normal16x16": pogema.Normal16x16,
-            "Hard16x16": pogema.Hard16x16,
-            "ExtraHard16x16": pogema.ExtraHard16x16,
-            "Easy32x32": pogema.Easy32x32,
-            "Normal32x32": pogema.Normal32x32,
-            "Hard32x32": pogema.Hard32x32,
-            "ExtraHard32x32": pogema.ExtraHard32x32,
-            "Easy64x64": pogema.Easy64x64,
-            "Normal64x64": pogema.Normal64x64,
-            "Hard64x64": pogema.Hard64x64,
-            "ExtraHard64x64": pogema.ExtraHard64x64,
         }
         self.on_target = on_target
 
