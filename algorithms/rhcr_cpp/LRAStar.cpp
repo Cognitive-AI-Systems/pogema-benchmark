@@ -177,7 +177,10 @@ void LRAStar::resolve_conflicts(const vector<Path>& input_paths)
         {
             agents_list[k] = k;
         }
-        std::random_shuffle(agents_list.begin(), agents_list.end());
+		std::random_device rd;
+		std::mt19937 g(rd());
+
+		std::shuffle(agents_list.begin(), agents_list.end(), g);
         for (auto agent : agents_list)
         {
 			if (path_pointers[agent] >= (int) input_paths[agent].size())

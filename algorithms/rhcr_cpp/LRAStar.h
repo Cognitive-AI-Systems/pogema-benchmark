@@ -1,6 +1,7 @@
 #pragma once
 #include "MAPFSolver.h"
-
+#include <algorithm>
+#include <random>
 
 class LRAStar: public MAPFSolver
 {

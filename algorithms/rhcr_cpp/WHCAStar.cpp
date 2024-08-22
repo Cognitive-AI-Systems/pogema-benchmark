@@ -36,7 +36,9 @@ bool WHCAStar::run(const vector<State>& starts,
     {
         num_restarts++;
         // generate random priority order
-        std::random_shuffle(priorities.begin(), priorities.end());
+        std::random_device rd;
+        std::mt19937 g(rd());
+        std::shuffle(priorities.begin(), priorities.end(), g);
 
         solution_cost = 0;
         solution = initial_solution;

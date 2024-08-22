@@ -2,6 +2,8 @@
 #include "SIPP.h"
 #include "MAPFSolver.h"
 #include <ctime>
+#include <random>
+#include <algorithm>
 
 // WHCA* with random restart
 class WHCAStar :
