@@ -148,6 +148,7 @@ class DreamerWorker:
         self.controller.receive_params(dreamer_params)
 
     def run(self, dreamer_params):
+        return
         self.controller.receive_params(dreamer_params)
 
         if self.env_type == Env.POGEMA:
