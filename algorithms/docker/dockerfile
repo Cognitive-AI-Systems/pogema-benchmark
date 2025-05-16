@@ -1,30 +1,26 @@
-FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
+FROM nvidia/cuda:12.1.1-devel-ubuntu22.04
 
-ADD requirements.txt /tmp/
+ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && apt install -y \
-    build-essential \
-    ffmpeg \
-    libsm6 \
-    libxext6 \
-    git \
-    vim \
-    && pip install --no-cache-dir -r /tmp/requirements.txt \
-    && pip install --no-cache-dir importlib-metadata==4.13.0 --force-reinstall \
-    && apt-get purge -y build-essential \
-    && apt-get autoremove -y \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-    && conda install -c conda-forge pybind11 \
-    && apt update && apt-get install -y \
-    cmake \
-    g++ \
-    wget \
-    libboost-all-dev
+# Install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-pip python3-venv build-essential curl cmake g++ wget \
+    ffmpeg libsm6 libxext6 libboost-all-dev vim && \
+    rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/microsoft/onnxruntime/releases/download/v1.14.1/onnxruntime-linux-x64-1.14.1.tgz \
-    && tar -xf onnxruntime-linux-x64-1.14.1.tgz \
-    && cp onnxruntime-linux-x64-1.14.1/lib/* /usr/lib/ && cp onnxruntime-linux-x64-1.14.1/include/* /usr/include/
-    
-# Clean up APT when done.
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# Set Python3 as default
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
+# Copy uv binaries
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+ENV PATH="/root/.local/bin:$PATH"
+ENV UV_SYSTEM_PYTHON=1
+
+# Install Python dependencies
+COPY requirements.txt /tmp/
+RUN uv pip install -r /tmp/requirements.txt
+
+# Install onnxruntime
+RUN wget -qO- https://github.com/microsoft/onnxruntime/releases/download/v1.14.1/onnxruntime-linux-x64-1.14.1.tgz \
+    | tar -xz --strip-components=1 -C /usr

@@ -5,6 +5,9 @@ import torch.nn.functional as F
 from scrimp.transformer.modules import ScaledDotProductAttention
 
 
+# from scrimp.transformer.modules import ScaledDotProductAttention
+
+
 class MultiHeadAttention(nn.Module):
     """multi-head self attention module"""
 

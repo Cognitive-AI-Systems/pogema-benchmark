@@ -28,7 +28,7 @@ algorithms:
 results_views:
   TabularView1:
     type: tabular
-    drop_keys: [ seed, map_name, ISR, ep_length, runtime, avg_agents_density, makespan, num_agents]
+    drop_keys: [ seed, map_name, ISR, ep_length, runtime, avg_agents_density, makespan, num_agents, a_collisions, o_collisions]
     print_results: True
 
 #  04-puzzles-SoC:

@@ -75,11 +75,11 @@ results_views:
     type: plot
     x: num_agents
     y: SoC
-    width: 3.0
+    width: 2.5
     height: 2.5
     line_width: 2
     use_log_scale_x: True
-    legend_font_size: 8
+    legend_font_size: 7
     font_size: 8
     name: Random / Mazes
     ticks: [8, 16, 24, 32, 48, 64]
@@ -88,14 +88,14 @@ results_views:
     type: plot
     x: num_agents
     y: CSR
-    width: 3.0
+    width: 2.5
     height: 2.5
     line_width: 2
     use_log_scale_x: True
-    legend_font_size: 8
+    legend_font_size: 7
     font_size: 8
     name: Random / Mazes
-    ticks: [8, 16, 24, 32, 48, 64]
+#    ticks: [8, 16, 24, 32, 48, 64]
 #
 #  TabularAll:
 #    type: tabular

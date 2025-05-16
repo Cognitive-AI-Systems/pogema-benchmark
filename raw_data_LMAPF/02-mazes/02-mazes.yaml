@@ -77,8 +77,8 @@ results_views:
     type: plot
     x: num_agents
     y: avg_throughput
-    width: 4.0
-    height: 3.1
+    width: 3.5
+    height: 2.6
     line_width: 2
     use_log_scale_x: True
     legend_font_size: 8

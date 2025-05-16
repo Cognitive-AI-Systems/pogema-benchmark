@@ -41,8 +41,8 @@ results_views:
     type: plot
     x: num_agents
     y: runtime
-    width: 3.5
-    height: 3
+    width: 3.2
+    height: 2.6
     line_width: 2
     use_log_scale_x: False
     use_log_scale_y: True
@@ -50,9 +50,3 @@ results_views:
     font_size: 8
     ticks: [ 32, 64, 96, 128, 160, 192 ]
     legend_loc: 'center left'
-
-  TabularCongestion:
-    type: tabular
-    drop_keys: [ seed, map_name, avg_throughput, SoC, makespan, runtime, avg_num_agents_in_obs]
-    print_results: True
-    round_digits: 3

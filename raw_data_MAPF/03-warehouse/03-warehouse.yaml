@@ -44,7 +44,7 @@ results_views:
     line_width: 2
     use_log_scale_x: False
     use_log_scale_y: True
-    legend_font_size: 8
+    legend_font_size: 7
     font_size: 8
     ticks: [ 32, 64, 96, 128, 160, 192 ]
 

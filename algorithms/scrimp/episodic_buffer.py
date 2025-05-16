@@ -2,7 +2,10 @@ import random
 
 import numpy as np
 
-from scrimp.alg_parameters import *
+from scrimp.alg_parameters import IntrinsicParameters
+
+
+# from scrimp.alg_parameters import *
 
 
 class EpisodicBuffer(object):

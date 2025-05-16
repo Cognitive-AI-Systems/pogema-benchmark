@@ -1,5 +1,4 @@
 import copy
-import math
 import random
 import sys
 
@@ -7,11 +6,11 @@ import gymnasium
 import numpy as np
 import torch
 from gymnasium import spaces
-from matplotlib.colors import hsv_to_rgb
 
-from scrimp.alg_parameters import *
+from scrimp.alg_parameters import EnvParameters, TieBreakingParameters, NetParameters
 from scrimp.od_mstar3 import od_mstar
 from scrimp.od_mstar3.col_set_addition import NoSolutionError
+
 
 opposite_actions = {0: -1, 1: 3, 2: 4, 3: 1, 4: 2, 5: 7, 6: 8, 7: 5, 8: 6}
 dirDict = {0: (0, 0), 1: (0, 1), 2: (1, 0), 3: (0, -1), 4: (-1, 0), 5: (1, 1), 6: (1, -1), 7: (-1, -1),

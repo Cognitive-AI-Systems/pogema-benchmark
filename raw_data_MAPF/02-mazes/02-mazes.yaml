@@ -71,26 +71,26 @@ results_views:
     drop_keys: [ seed, map_name ]
     print_results: True
 
-#  02-mazes-SoC:
-#    name: Mazes $20\times20$
-#    type: plot
-#    x: num_agents
-#    y: SoC
-#    width: 2.5
-#    height: 2.5
-#    line_width: 2
-#    use_log_scale_x: True
-#    legend_font_size: 8
-#    font_size: 8
-#
-#  02-mazes-CSR:
-#    name: Mazes $20\times20$
-#    type: plot
-#    x: num_agents
-#    y: CSR
-#    width: 2.5
-#    height: 2.5
-#    line_width: 2
-#    use_log_scale_x: True
-#    legend_font_size: 8
-#    font_size: 8
+  02-mazes-SoC:
+    name: Mazes $20\times20$
+    type: plot
+    x: num_agents
+    y: SoC
+    width: 2.5
+    height: 2.5
+    line_width: 2
+    use_log_scale_x: True
+    legend_font_size: 8
+    font_size: 8
+
+  02-mazes-CSR:
+    name: Mazes
+    type: plot
+    x: num_agents
+    y: CSR
+    width: 2.5
+    height: 2.5
+    line_width: 2
+    use_log_scale_x: True
+    legend_font_size: 8
+    font_size: 8

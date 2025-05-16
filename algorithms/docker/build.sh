@@ -1,1 +1,1 @@
-docker build -t pogema-toolbox .
+docker build -t pogema-benchmark .

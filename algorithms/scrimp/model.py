@@ -5,9 +5,12 @@ import torch.optim as optim
 from torch.cuda.amp.autocast_mode import autocast
 from torch.cuda.amp.grad_scaler import GradScaler
 
-from scrimp.alg_parameters import *
+from scrimp.alg_parameters import TrainingParameters, IntrinsicParameters, EnvParameters, NetParameters
 from scrimp.net import SCRIMPNet
+from scrimp.util import set_global_seeds
+from scrimp.alg_parameters import *
 
+set_global_seeds(SetupParameters.SEED)
 
 class Model(object):
     """model0 of agents"""
@@ -19,7 +22,6 @@ class Model(object):
         self.network = SCRIMPNet().to(device)  # neural network
         if global_model:
             self.net_optimizer = optim.Adam(self.network.parameters(), lr=TrainingParameters.lr)
-            # self.multi_gpu_net = torch.nn.DataParallel(self.network) # training on multiple GPU
             self.net_scaler = GradScaler()  # automatic mixed precision
 
     def step(self, observation, vector, valid_action, input_state, no_reward, message, num_agent):
@@ -105,7 +107,7 @@ class Model(object):
         ps = np.squeeze(ps.cpu().detach().numpy())
         if num_agent == 1:
             ps[0] = 0
-            ps = ps/sum(ps)
+            ps = ps / sum(ps)
         greedy_action = np.argmax(ps, axis=-1)
         scale_factor = IntrinsicParameters.SURROGATE1
         v_all = v_ex + scale_factor * v_in
@@ -198,9 +200,9 @@ class Model(object):
 
             # total loss
             all_loss = -policy_loss - entropy * TrainingParameters.ENTROPY_COEF + \
-                TrainingParameters.IN_VALUE_COEF * critic_loss_in + \
-                TrainingParameters.EX_VALUE_COEF * critic_loss_ex + TrainingParameters.VALID_COEF * valid_loss \
-                + TrainingParameters.BLOCK_COEF * blocking_loss
+                       TrainingParameters.IN_VALUE_COEF * critic_loss_in + \
+                       TrainingParameters.EX_VALUE_COEF * critic_loss_ex + TrainingParameters.VALID_COEF * valid_loss \
+                       + TrainingParameters.BLOCK_COEF * blocking_loss
 
         clip_frac = torch.mean(torch.greater(torch.abs(ratio - 1.0), TrainingParameters.CLIP_RANGE).float())
 

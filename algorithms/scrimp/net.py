@@ -4,7 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.cuda.amp.autocast_mode import autocast
 
-from scrimp.alg_parameters import *
+from scrimp.alg_parameters import NetParameters, EnvParameters
 from scrimp.transformer.encoder_model import TransformerEncoder
 
 
@@ -83,7 +83,7 @@ class SCRIMPNet(nn.Module):
     def forward(self, obs, vector, input_state, message):
         """run neural network"""
         num_agent = obs.shape[1]
-        obs = torch.reshape(obs, (-1,  NetParameters.NUM_CHANNEL, EnvParameters.FOV_SIZE, EnvParameters.FOV_SIZE))
+        obs = torch.reshape(obs, (-1, NetParameters.NUM_CHANNEL, EnvParameters.FOV_SIZE, EnvParameters.FOV_SIZE))
         vector = torch.reshape(vector, (-1, NetParameters.VECTOR_LEN))
         # matrix input
         x_1 = F.relu(self.conv1(obs))
@@ -121,4 +121,3 @@ class SCRIMPNet(nn.Module):
         blocking = torch.sigmoid(self.blocking_layer(c1))
         message = self.message_layer(c1)
         return policy, value_in, value_ex, blocking, policy_sig, output_state, policy_layer, message
-

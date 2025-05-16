@@ -1,1 +1,1442 @@
-[{"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 314, "SoC": 315, "makespan": 315, "runtime": 0.08714450849220157, "avg_agents_density": 0.013051315547082496}, "env_grid_search": {"seed": 0, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5694193741073832, "avg_agents_density": 0.012155696447729058}, "env_grid_search": {"seed": 0, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5400226860074326, "avg_agents_density": 0.011660445633050567}, "env_grid_search": {"seed": 0, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5358626676024869, "avg_agents_density": 0.011408424903775978}, "env_grid_search": {"seed": 0, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 59, "SoC": 60, "makespan": 60, "runtime": 0.019836447318084538, "avg_agents_density": 0.014492943035310511}, "env_grid_search": {"seed": 0, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 322, "SoC": 323, "makespan": 323, "runtime": 0.09118304029107094, "avg_agents_density": 0.011422694712785222}, "env_grid_search": {"seed": 0, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5972288280026987, "avg_agents_density": 0.017126029666046275}, "env_grid_search": {"seed": 0, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5552436836296692, "avg_agents_density": 0.012857203787945196}, "env_grid_search": {"seed": 0, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 178, "SoC": 179, "makespan": 179, "runtime": 0.05031453724950552, "avg_agents_density": 0.010042106194682836}, "env_grid_search": {"seed": 1, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5590700532775372, "avg_agents_density": 0.010820333911076941}, "env_grid_search": {"seed": 1, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5861402922309935, "avg_agents_density": 0.012126884124299374}, "env_grid_search": {"seed": 1, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 199, "SoC": 200, "makespan": 200, "runtime": 0.05975233705248684, "avg_agents_density": 0.01232867368327883}, "env_grid_search": {"seed": 1, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 141, "SoC": 142, "makespan": 142, "runtime": 0.044292460079304874, "avg_agents_density": 0.011445067510486991}, "env_grid_search": {"seed": 1, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 603, "SoC": 604, "makespan": 604, "runtime": 0.14478902937844396, "avg_agents_density": 0.01367477387780792}, "env_grid_search": {"seed": 1, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.4818819579668343, "avg_agents_density": 0.011071421890569661}, "env_grid_search": {"seed": 1, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 100, "SoC": 101, "makespan": 101, "runtime": 0.030467047821730375, "avg_agents_density": 0.009980893194483897}, "env_grid_search": {"seed": 1, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 272, "SoC": 273, "makespan": 273, "runtime": 0.06866612378507853, "avg_agents_density": 0.013186933519456311}, "env_grid_search": {"seed": 2, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 105, "SoC": 106, "makespan": 106, "runtime": 0.036325737135484815, "avg_agents_density": 0.012042444623492004}, "env_grid_search": {"seed": 2, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5415310375392437, "avg_agents_density": 0.01714863590911964}, "env_grid_search": {"seed": 2, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5312266589608043, "avg_agents_density": 0.011286170960900913}, "env_grid_search": {"seed": 2, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5346767202718183, "avg_agents_density": 0.013022835850172401}, "env_grid_search": {"seed": 2, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 580, "SoC": 581, "makespan": 581, "runtime": 0.2891920004040003, "avg_agents_density": 0.012154064798930308}, "env_grid_search": {"seed": 2, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 62, "SoC": 63, "makespan": 63, "runtime": 0.16309154697228223, "avg_agents_density": 0.010497808748475272}, "env_grid_search": {"seed": 2, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.6539449736010283, "avg_agents_density": 0.012917745062082382}, "env_grid_search": {"seed": 2, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 234, "SoC": 235, "makespan": 235, "runtime": 0.09147293225396425, "avg_agents_density": 0.01213961910473934}, "env_grid_search": {"seed": 3, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.7120717614889145, "avg_agents_density": 0.012122456609989679}, "env_grid_search": {"seed": 3, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 0, "SoC": 1, "makespan": 1, "runtime": 0.006076460005715489, "avg_agents_density": 0.03785714285714285}, "env_grid_search": {"seed": 3, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 183, "SoC": 184, "makespan": 184, "runtime": 0.05096711788792163, "avg_agents_density": 0.012426325309877374}, "env_grid_search": {"seed": 3, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5711491003166884, "avg_agents_density": 0.008918954541660475}, "env_grid_search": {"seed": 3, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 172, "SoC": 173, "makespan": 173, "runtime": 0.08029909583274275, "avg_agents_density": 0.012069932534599264}, "env_grid_search": {"seed": 3, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.7216031943680719, "avg_agents_density": 0.00982519571994637}, "env_grid_search": {"seed": 3, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 132, "SoC": 133, "makespan": 133, "runtime": 0.039458427927456796, "avg_agents_density": 0.01232611811700887}, "env_grid_search": {"seed": 3, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.537205547792837, "avg_agents_density": 0.012041833060987028}, "env_grid_search": {"seed": 4, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 220, "SoC": 221, "makespan": 221, "runtime": 0.06279387231916189, "avg_agents_density": 0.013605025361865796}, "env_grid_search": {"seed": 4, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5560463411966339, "avg_agents_density": 0.016171724142548347}, "env_grid_search": {"seed": 4, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 239, "SoC": 240, "makespan": 240, "runtime": 0.06839344196487218, "avg_agents_density": 0.010739755045760847}, "env_grid_search": {"seed": 4, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5491543529788032, "avg_agents_density": 0.01324121734236747}, "env_grid_search": {"seed": 4, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 123, "SoC": 124, "makespan": 124, "runtime": 0.058253630762919784, "avg_agents_density": 0.010680061341832138}, "env_grid_search": {"seed": 4, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 46, "SoC": 47, "makespan": 47, "runtime": 0.01559762901160866, "avg_agents_density": 0.014092689182264228}, "env_grid_search": {"seed": 4, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 0, "SoC": 1, "makespan": 1, "runtime": 0.004392912960611284, "avg_agents_density": 0.0787878787878788}, "env_grid_search": {"seed": 4, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 263, "SoC": 264, "makespan": 264, "runtime": 0.06770460109692067, "avg_agents_density": 0.013045925914377674}, "env_grid_search": {"seed": 5, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5077506128000095, "avg_agents_density": 0.011187428495560366}, "env_grid_search": {"seed": 5, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 11, "SoC": 12, "makespan": 12, "runtime": 0.008243452990427613, "avg_agents_density": 0.013864652952908998}, "env_grid_search": {"seed": 5, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 205, "SoC": 206, "makespan": 206, "runtime": 0.05002440558746457, "avg_agents_density": 0.010878157384928297}, "env_grid_search": {"seed": 5, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5013034545117989, "avg_agents_density": 0.01175584157996292}, "env_grid_search": {"seed": 5, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.48613580456003547, "avg_agents_density": 0.013160077342849888}, "env_grid_search": {"seed": 5, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 161, "SoC": 162, "makespan": 162, "runtime": 0.045701994094997644, "avg_agents_density": 0.011547612929351641}, "env_grid_search": {"seed": 5, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.49879607325419784, "avg_agents_density": 0.009807916708985467}, "env_grid_search": {"seed": 5, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 344, "SoC": 345, "makespan": 345, "runtime": 0.08682501700241119, "avg_agents_density": 0.01742476671320046}, "env_grid_search": {"seed": 6, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 287, "SoC": 288, "makespan": 288, "runtime": 0.07436407136265188, "avg_agents_density": 0.012122521170286832}, "env_grid_search": {"seed": 6, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 161, "SoC": 162, "makespan": 162, "runtime": 0.04552768054418266, "avg_agents_density": 0.010879194405572713}, "env_grid_search": {"seed": 6, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 173, "SoC": 174, "makespan": 174, "runtime": 0.041744794230908155, "avg_agents_density": 0.01280770144361351}, "env_grid_search": {"seed": 6, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 223, "SoC": 224, "makespan": 224, "runtime": 0.06104134302586317, "avg_agents_density": 0.01279695910755767}, "env_grid_search": {"seed": 6, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 229, "SoC": 230, "makespan": 230, "runtime": 0.06421836058143526, "avg_agents_density": 0.011540915456599386}, "env_grid_search": {"seed": 6, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 335, "SoC": 336, "makespan": 336, "runtime": 0.14481221418827772, "avg_agents_density": 0.012105315536663755}, "env_grid_search": {"seed": 6, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.6015170091995969, "avg_agents_density": 0.017401994061133474}, "env_grid_search": {"seed": 6, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 25, "SoC": 26, "makespan": 26, "runtime": 0.013546227011829615, "avg_agents_density": 0.008700928184968133}, "env_grid_search": {"seed": 7, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 200, "SoC": 201, "makespan": 201, "runtime": 0.058068483718670905, "avg_agents_density": 0.013016783670089526}, "env_grid_search": {"seed": 7, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 94, "SoC": 95, "makespan": 95, "runtime": 0.023596327169798315, "avg_agents_density": 0.010255451910817556}, "env_grid_search": {"seed": 7, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 183, "SoC": 184, "makespan": 184, "runtime": 0.049386873841285706, "avg_agents_density": 0.011376850536038914}, "env_grid_search": {"seed": 7, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.4991461307508871, "avg_agents_density": 0.008554755598776635}, "env_grid_search": {"seed": 7, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 220, "SoC": 221, "makespan": 221, "runtime": 0.05643868516199291, "avg_agents_density": 0.011635085029780496}, "env_grid_search": {"seed": 7, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5078370360424742, "avg_agents_density": 0.016272889951816243}, "env_grid_search": {"seed": 7, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.6171396614518017, "avg_agents_density": 0.01641473671117599}, "env_grid_search": {"seed": 7, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 258, "SoC": 259, "makespan": 259, "runtime": 0.12953853514045477, "avg_agents_density": 0.011208307628061798}, "env_grid_search": {"seed": 8, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5497642706613988, "avg_agents_density": 0.017154477299990135}, "env_grid_search": {"seed": 8, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5307200633687899, "avg_agents_density": 0.015011366363554835}, "env_grid_search": {"seed": 8, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5713005729485303, "avg_agents_density": 0.01332924214129253}, "env_grid_search": {"seed": 8, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 206, "SoC": 207, "makespan": 207, "runtime": 0.09801058634184301, "avg_agents_density": 0.011628292459543277}, "env_grid_search": {"seed": 8, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 354, "SoC": 355, "makespan": 355, "runtime": 0.10036323312669992, "avg_agents_density": 0.011765861469374835}, "env_grid_search": {"seed": 8, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 45, "SoC": 46, "makespan": 46, "runtime": 0.01645065622869879, "avg_agents_density": 0.008745904868753467}, "env_grid_search": {"seed": 8, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 33, "SoC": 34, "makespan": 34, "runtime": 0.018840849865227938, "avg_agents_density": 0.012754795544573459}, "env_grid_search": {"seed": 8, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.4876499614911154, "avg_agents_density": 0.012632288403841225}, "env_grid_search": {"seed": 9, "map_name": "Berlin_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 150, "SoC": 151, "makespan": 151, "runtime": 0.03968489798717201, "avg_agents_density": 0.009703154306703085}, "env_grid_search": {"seed": 9, "map_name": "Boston_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 62, "SoC": 63, "makespan": 63, "runtime": 0.016485444852150977, "avg_agents_density": 0.013323609686682425}, "env_grid_search": {"seed": 9, "map_name": "London_2_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 172, "SoC": 173, "makespan": 173, "runtime": 0.04682718717958778, "avg_agents_density": 0.011626381304369706}, "env_grid_search": {"seed": 9, "map_name": "Milan_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.49428841785993427, "avg_agents_density": 0.011756459542483506}, "env_grid_search": {"seed": 9, "map_name": "Moscow_0_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.5448525901883841, "avg_agents_density": 0.010622268587426313}, "env_grid_search": {"seed": 9, "map_name": "NewYork_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 0.0, "CSR": 0.0, "ep_length": 2047, "SoC": 2048, "makespan": 2048, "runtime": 0.6884167962707579, "avg_agents_density": 0.01953046710969277}, "env_grid_search": {"seed": 9, "map_name": "Paris_1_256"}, "algorithm": "QMIX"}, {"metrics": {"ISR": 1.0, "CSR": 1.0, "ep_length": 134, "SoC": 135, "makespan": 135, "runtime": 0.17909022700041533, "avg_agents_density": 0.011996296481346726}, "env_grid_search": {"seed": 9, "map_name": "Paris_2_256"}, "algorithm": "QMIX"}]
+[
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 214,
+      "SoC": 215,
+      "makespan": 215,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.04610080400379957,
+      "avg_agents_density": 0.012953825835240164
+    },
+    "env_grid_search": {
+      "seed": 0,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.8664862560108304,
+      "avg_agents_density": 0.014921825042458401
+    },
+    "env_grid_search": {
+      "seed": 0,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 1.454865231002259,
+      "avg_agents_density": 0.013262158662395758
+    },
+    "env_grid_search": {
+      "seed": 0,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 144,
+      "SoC": 145,
+      "makespan": 145,
+      "a_collisions": 0,
+      "o_collisions": 1,
+      "runtime": 0.043741277000663104,
+      "avg_agents_density": 0.013609242560527372
+    },
+    "env_grid_search": {
+      "seed": 0,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 293,
+      "SoC": 294,
+      "makespan": 294,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.08908553900164407,
+      "avg_agents_density": 0.01544714689022128
+    },
+    "env_grid_search": {
+      "seed": 0,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.8273016390112389,
+      "avg_agents_density": 0.015102811393375498
+    },
+    "env_grid_search": {
+      "seed": 0,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 57,
+      "runtime": 1.140398204005578,
+      "avg_agents_density": 0.022064713066228224
+    },
+    "env_grid_search": {
+      "seed": 0,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 246,
+      "SoC": 247,
+      "makespan": 247,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.14630404200397606,
+      "avg_agents_density": 0.01132749728307122
+    },
+    "env_grid_search": {
+      "seed": 0,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 178,
+      "SoC": 179,
+      "makespan": 179,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.1199761359985132,
+      "avg_agents_density": 0.010042106194682836
+    },
+    "env_grid_search": {
+      "seed": 1,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 155,
+      "SoC": 156,
+      "makespan": 156,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.150812405006036,
+      "avg_agents_density": 0.011365612607573593
+    },
+    "env_grid_search": {
+      "seed": 1,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 272,
+      "SoC": 273,
+      "makespan": 273,
+      "a_collisions": 0,
+      "o_collisions": 2,
+      "runtime": 0.17303014598928712,
+      "avg_agents_density": 0.01343474720704977
+    },
+    "env_grid_search": {
+      "seed": 1,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 34,
+      "SoC": 35,
+      "makespan": 35,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.025275955998040445,
+      "avg_agents_density": 0.01191241454070057
+    },
+    "env_grid_search": {
+      "seed": 1,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 110,
+      "SoC": 111,
+      "makespan": 111,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.07331661499938491,
+      "avg_agents_density": 0.012161457448405003
+    },
+    "env_grid_search": {
+      "seed": 1,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 1.084755244992266,
+      "avg_agents_density": 0.011569801099344114
+    },
+    "env_grid_search": {
+      "seed": 1,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.8767674939945209,
+      "avg_agents_density": 0.015989838968482332
+    },
+    "env_grid_search": {
+      "seed": 1,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 102,
+      "SoC": 103,
+      "makespan": 103,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.07546674800050823,
+      "avg_agents_density": 0.010015584054750504
+    },
+    "env_grid_search": {
+      "seed": 1,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 410,
+      "SoC": 411,
+      "makespan": 411,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.14916695400188473,
+      "avg_agents_density": 0.012166883642189255
+    },
+    "env_grid_search": {
+      "seed": 2,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 1.305117001025792,
+      "avg_agents_density": 0.011332313736177373
+    },
+    "env_grid_search": {
+      "seed": 2,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 1.0447371880118226,
+      "avg_agents_density": 0.010982323044717838
+    },
+    "env_grid_search": {
+      "seed": 2,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 195,
+      "SoC": 196,
+      "makespan": 196,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.059526261999963026,
+      "avg_agents_density": 0.011738695538674732
+    },
+    "env_grid_search": {
+      "seed": 2,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 203,
+      "SoC": 204,
+      "makespan": 204,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.12054347900266293,
+      "avg_agents_density": 0.009707896056885683
+    },
+    "env_grid_search": {
+      "seed": 2,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 2020,
+      "runtime": 1.6034650210021937,
+      "avg_agents_density": 0.01219838270176665
+    },
+    "env_grid_search": {
+      "seed": 2,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 62,
+      "SoC": 63,
+      "makespan": 63,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.02338385399798426,
+      "avg_agents_density": 0.010514270770972209
+    },
+    "env_grid_search": {
+      "seed": 2,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 315,
+      "SoC": 316,
+      "makespan": 316,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.11453366299792833,
+      "avg_agents_density": 0.012676027012113572
+    },
+    "env_grid_search": {
+      "seed": 2,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 223,
+      "SoC": 224,
+      "makespan": 224,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.07379691600544902,
+      "avg_agents_density": 0.010740090151621156
+    },
+    "env_grid_search": {
+      "seed": 3,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 1.2135272499808707,
+      "avg_agents_density": 0.014943799910947991
+    },
+    "env_grid_search": {
+      "seed": 3,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 2,
+      "SoC": 3,
+      "makespan": 3,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.002899482000429998,
+      "avg_agents_density": 0.038928571428571423
+    },
+    "env_grid_search": {
+      "seed": 3,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.8564398720027384,
+      "avg_agents_density": 0.01108216919730335
+    },
+    "env_grid_search": {
+      "seed": 3,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 126,
+      "SoC": 127,
+      "makespan": 127,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.10158167099598359,
+      "avg_agents_density": 0.012387995685091446
+    },
+    "env_grid_search": {
+      "seed": 3,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 1487,
+      "SoC": 1488,
+      "makespan": 1488,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.5859358719981174,
+      "avg_agents_density": 0.011482265279998115
+    },
+    "env_grid_search": {
+      "seed": 3,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 99,
+      "SoC": 100,
+      "makespan": 100,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.08734208300120372,
+      "avg_agents_density": 0.012312849346045924
+    },
+    "env_grid_search": {
+      "seed": 3,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 132,
+      "SoC": 133,
+      "makespan": 133,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.04119533599805436,
+      "avg_agents_density": 0.01187778879779217
+    },
+    "env_grid_search": {
+      "seed": 3,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 314,
+      "SoC": 315,
+      "makespan": 315,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.18674156599627167,
+      "avg_agents_density": 0.010873201721906846
+    },
+    "env_grid_search": {
+      "seed": 4,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 1.0884688800106233,
+      "avg_agents_density": 0.013237228701270226
+    },
+    "env_grid_search": {
+      "seed": 4,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.7705457550127903,
+      "avg_agents_density": 0.023244489773676248
+    },
+    "env_grid_search": {
+      "seed": 4,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 1,
+      "runtime": 1.1169640699781667,
+      "avg_agents_density": 0.01366512353845244
+    },
+    "env_grid_search": {
+      "seed": 4,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.8597310270097296,
+      "avg_agents_density": 0.01247446658379399
+    },
+    "env_grid_search": {
+      "seed": 4,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.9358802149972689,
+      "avg_agents_density": 0.01030429236221648
+    },
+    "env_grid_search": {
+      "seed": 4,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.5979191289889059,
+      "avg_agents_density": 0.014362839303028006
+    },
+    "env_grid_search": {
+      "seed": 4,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 0,
+      "SoC": 1,
+      "makespan": 1,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.0007056089998513926,
+      "avg_agents_density": 0.0787878787878788
+    },
+    "env_grid_search": {
+      "seed": 4,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 913,
+      "SoC": 914,
+      "makespan": 914,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.3633363119961359,
+      "avg_agents_density": 0.011258975476476167
+    },
+    "env_grid_search": {
+      "seed": 5,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 182,
+      "SoC": 183,
+      "makespan": 183,
+      "a_collisions": 0,
+      "o_collisions": 1,
+      "runtime": 0.05928171699270024,
+      "avg_agents_density": 0.010895714785839537
+    },
+    "env_grid_search": {
+      "seed": 5,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.7904533450000599,
+      "avg_agents_density": 0.011329386633755791
+    },
+    "env_grid_search": {
+      "seed": 5,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.6587952669715378,
+      "avg_agents_density": 0.014201546645029324
+    },
+    "env_grid_search": {
+      "seed": 5,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 216,
+      "SoC": 217,
+      "makespan": 217,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.1099138449972088,
+      "avg_agents_density": 0.010854052214854913
+    },
+    "env_grid_search": {
+      "seed": 5,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 1581,
+      "runtime": 0.6235329449646088,
+      "avg_agents_density": 0.011901545482391597
+    },
+    "env_grid_search": {
+      "seed": 5,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 157,
+      "SoC": 158,
+      "makespan": 158,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.08013165399916033,
+      "avg_agents_density": 0.011798211748037085
+    },
+    "env_grid_search": {
+      "seed": 5,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 1.3968342520292936,
+      "avg_agents_density": 0.01275380609010691
+    },
+    "env_grid_search": {
+      "seed": 5,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 1.1547093520139242,
+      "avg_agents_density": 0.012064411861640147
+    },
+    "env_grid_search": {
+      "seed": 6,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.6009893760065097,
+      "avg_agents_density": 0.011132858188137603
+    },
+    "env_grid_search": {
+      "seed": 6,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 1,
+      "runtime": 1.0000316789883072,
+      "avg_agents_density": 0.017651651165882635
+    },
+    "env_grid_search": {
+      "seed": 6,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.43359786798464484,
+      "avg_agents_density": 0.012937680327924719
+    },
+    "env_grid_search": {
+      "seed": 6,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.3995753369845261,
+      "avg_agents_density": 0.011963813534407104
+    },
+    "env_grid_search": {
+      "seed": 6,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.3893058180301523,
+      "avg_agents_density": 0.01004824118451176
+    },
+    "env_grid_search": {
+      "seed": 6,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 666,
+      "SoC": 667,
+      "makespan": 667,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.16295515999263444,
+      "avg_agents_density": 0.012334339448818411
+    },
+    "env_grid_search": {
+      "seed": 6,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.5938671080039057,
+      "avg_agents_density": 0.012463986368120584
+    },
+    "env_grid_search": {
+      "seed": 6,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 25,
+      "SoC": 26,
+      "makespan": 26,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.008300349001729046,
+      "avg_agents_density": 0.008700928184968133
+    },
+    "env_grid_search": {
+      "seed": 7,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 153,
+      "SoC": 154,
+      "makespan": 154,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.04498238999804016,
+      "avg_agents_density": 0.0117004312706506
+    },
+    "env_grid_search": {
+      "seed": 7,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 567,
+      "SoC": 568,
+      "makespan": 568,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.2121460870230294,
+      "avg_agents_density": 0.012620335191312566
+    },
+    "env_grid_search": {
+      "seed": 7,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 140,
+      "SoC": 141,
+      "makespan": 141,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.09443572400323319,
+      "avg_agents_density": 0.010535887311583066
+    },
+    "env_grid_search": {
+      "seed": 7,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 195,
+      "SoC": 196,
+      "makespan": 196,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.05763691299398488,
+      "avg_agents_density": 0.01056229061804255
+    },
+    "env_grid_search": {
+      "seed": 7,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 840,
+      "SoC": 841,
+      "makespan": 841,
+      "a_collisions": 0,
+      "o_collisions": 10,
+      "runtime": 0.27350030402340053,
+      "avg_agents_density": 0.010560974484781379
+    },
+    "env_grid_search": {
+      "seed": 7,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 304,
+      "SoC": 305,
+      "makespan": 305,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.2551711919986701,
+      "avg_agents_density": 0.012131950247057773
+    },
+    "env_grid_search": {
+      "seed": 7,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 210,
+      "runtime": 1.6897514819766002,
+      "avg_agents_density": 0.020244476447632512
+    },
+    "env_grid_search": {
+      "seed": 7,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 254,
+      "SoC": 255,
+      "makespan": 255,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.1777440529949672,
+      "avg_agents_density": 0.011166067667757741
+    },
+    "env_grid_search": {
+      "seed": 8,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.7817146260440495,
+      "avg_agents_density": 0.014946822360324437
+    },
+    "env_grid_search": {
+      "seed": 8,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 504,
+      "SoC": 505,
+      "makespan": 505,
+      "a_collisions": 0,
+      "o_collisions": 123,
+      "runtime": 0.21222897400184593,
+      "avg_agents_density": 0.014915301322082412
+    },
+    "env_grid_search": {
+      "seed": 8,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 1.1662052390156532,
+      "avg_agents_density": 0.011236405982777784
+    },
+    "env_grid_search": {
+      "seed": 8,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 25,
+      "SoC": 26,
+      "makespan": 26,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.017913379002493457,
+      "avg_agents_density": 0.010921774770327223
+    },
+    "env_grid_search": {
+      "seed": 8,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 564,
+      "SoC": 565,
+      "makespan": 565,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.16630633799013594,
+      "avg_agents_density": 0.012145300408705033
+    },
+    "env_grid_search": {
+      "seed": 8,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 45,
+      "SoC": 46,
+      "makespan": 46,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.01404801499666064,
+      "avg_agents_density": 0.008731710681165433
+    },
+    "env_grid_search": {
+      "seed": 8,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 39,
+      "SoC": 40,
+      "makespan": 40,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.03795185099988885,
+      "avg_agents_density": 0.012667923023598392
+    },
+    "env_grid_search": {
+      "seed": 8,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.953082627992444,
+      "avg_agents_density": 0.011270581065426302
+    },
+    "env_grid_search": {
+      "seed": 9,
+      "map_name": "Berlin_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 156,
+      "SoC": 157,
+      "makespan": 157,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.05094843200276955,
+      "avg_agents_density": 0.009118148346479883
+    },
+    "env_grid_search": {
+      "seed": 9,
+      "map_name": "Boston_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 100,
+      "runtime": 0.6420984499891347,
+      "avg_agents_density": 0.014278491601431749
+    },
+    "env_grid_search": {
+      "seed": 9,
+      "map_name": "London_2_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 450,
+      "SoC": 451,
+      "makespan": 451,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.24835064900798898,
+      "avg_agents_density": 0.011715615021455506
+    },
+    "env_grid_search": {
+      "seed": 9,
+      "map_name": "Milan_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 926,
+      "SoC": 927,
+      "makespan": 927,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.4014036839898836,
+      "avg_agents_density": 0.020319446315606164
+    },
+    "env_grid_search": {
+      "seed": 9,
+      "map_name": "Moscow_0_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 811,
+      "runtime": 0.6766680859836924,
+      "avg_agents_density": 0.014781299710460378
+    },
+    "env_grid_search": {
+      "seed": 9,
+      "map_name": "NewYork_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 0.0,
+      "CSR": 0.0,
+      "ep_length": 2047,
+      "SoC": 2048,
+      "makespan": 2048,
+      "a_collisions": 0,
+      "o_collisions": 1,
+      "runtime": 0.681029813979876,
+      "avg_agents_density": 0.012645346489392254
+    },
+    "env_grid_search": {
+      "seed": 9,
+      "map_name": "Paris_1_256"
+    },
+    "algorithm": "QMIX"
+  },
+  {
+    "metrics": {
+      "ISR": 1.0,
+      "CSR": 1.0,
+      "ep_length": 98,
+      "SoC": 99,
+      "makespan": 99,
+      "a_collisions": 0,
+      "o_collisions": 0,
+      "runtime": 0.09523226199780765,
+      "avg_agents_density": 0.010750020582000239
+    },
+    "env_grid_search": {
+      "seed": 9,
+      "map_name": "Paris_2_256"
+    },
+    "algorithm": "QMIX"
+  }
+]

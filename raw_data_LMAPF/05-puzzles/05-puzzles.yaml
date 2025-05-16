@@ -35,6 +35,6 @@ results_views:
 
   TabularCooperation:
     type: tabular
-    drop_keys: [ seed, map_name, runtime, avg_agents_density, makespan, num_agents, avg_num_agents_in_obs]
+    drop_keys: [ seed, map_name, runtime, avg_agents_density, makespan, num_agents, avg_num_agents_in_obs, a_collisions, o_collisions]
     print_results: True
     round_digits: 3

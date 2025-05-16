@@ -27,6 +27,6 @@ results_views:
 
   TabularMakespan:
     type: tabular
-    drop_keys: [ seed, ISR, CSR, SoC, runtime, ep_length, avg_agents_density, map_name, avg_num_agents_in_obs ]
+    drop_keys: [ seed, ISR, CSR, SoC, runtime, ep_length, avg_agents_density, map_name, avg_num_agents_in_obs, a_collisions, o  _collisions ]
     print_results: True
     round_digits: 2
