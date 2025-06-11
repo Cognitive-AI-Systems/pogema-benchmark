@@ -20,5 +20,5 @@ typing-extensions==4.5.0
 importlib-metadata==4.13.0
 dask[distributed]
 loguru
-pogema-toolbox==0.1.0
-pogema==1.3.0
+pogema-toolbox==0.2.0
+pogema==1.5.0a0

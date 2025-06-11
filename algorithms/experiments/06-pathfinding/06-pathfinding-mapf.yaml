@@ -1,37 +1,430 @@
-environment:
-  name: Environment
-  with_animation: False
-  on_target: 'nothing'
-  max_episode_steps: 2048
-  observation_type: 'MAPF'
-  collision_system: 'soft'
-  #obs_radius: 4
-  seed:
-    grid_search: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
-  num_agents: 1
-  map_name:
-    grid_search: [ Berlin_1_256, Boston_0_256, London_2_256, 
-                   Milan_0_256, Moscow_0_256, 
-                   NewYork_1_256, Paris_1_256, Paris_2_256,]
-
 algorithms:
-  #DCC:  # requires obs_radius: 4 in environment
-  #  name: DCC
-  LaCAM:
-    name: LaCAM
   Follower:
     name: Follower
-  RHCR:
-    name: RHCR
-  MATS-LP:
-    name: MATS-LP
-  SCRIMP:
-    name: SCRIMP
-  
-
-
+  LaCAM:
+    name: LaCAM
+environment:
+  collision_system: soft
+  map_name:
+    grid_search: [Berlin_1_256, Boston_0_256, London_2_256, Milan_0_256, Moscow_0_256,
+      NewYork_1_256, Paris_1_256, Paris_2_256]
+  max_episode_steps: 2048
+  name: Environment
+  num_agents: 1
+  observation_type: MAPF
+  on_target: nothing
+  seed:
+    grid_search: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  with_animation: false
 results_views:
-  TabularView1:
+  TabularMakespan:
+    drop_keys: [seed, ISR, CSR, SoC, runtime, ep_length, avg_agents_density, map_name,
+      a_collisions, o_collisions]
+    print_results: true
+    round_digits: 2
     type: tabular
-    drop_keys: [ seed, map_name ]
-    print_results: True
+  TabularView1:
+    drop_keys: [seed, map_name]
+    print_results: true
+    type: tabular
+scenarios:
+  Scenario-00:
+    agents_xy: [[66, 143]]
+    map_name: Berlin_1_256
+    seed: 0
+    targets_xy: [[199, 216]]
+  Scenario-01:
+    agents_xy: [[62, 173]]
+    map_name: Boston_0_256
+    seed: 0
+    targets_xy: [[248, 32]]
+  Scenario-02:
+    agents_xy: [[228, 228]]
+    map_name: London_2_256
+    seed: 0
+    targets_xy: [[14, 53]]
+  Scenario-03:
+    agents_xy: [[143, 164]]
+    map_name: Milan_0_256
+    seed: 0
+    targets_xy: [[60, 107]]
+  Scenario-04:
+    agents_xy: [[99, 224]]
+    map_name: Moscow_0_256
+    seed: 0
+    targets_xy: [[60, 205]]
+  Scenario-05:
+    agents_xy: [[151, 178]]
+    map_name: NewYork_1_256
+    seed: 0
+    targets_xy: [[51, 47]]
+  Scenario-06:
+    agents_xy: [[3, 138]]
+    map_name: Paris_1_256
+    seed: 0
+    targets_xy: [[131, 92]]
+  Scenario-07:
+    agents_xy: [[18, 159]]
+    map_name: Paris_2_256
+    seed: 0
+    targets_xy: [[171, 91]]
+  Scenario-08:
+    agents_xy: [[121, 95]]
+    map_name: Berlin_1_256
+    seed: 1
+    targets_xy: [[242, 153]]
+  Scenario-09:
+    agents_xy: [[88, 161]]
+    map_name: Boston_0_256
+    seed: 1
+    targets_xy: [[207, 186]]
+  Scenario-10:
+    agents_xy: [[203, 109]]
+    map_name: London_2_256
+    seed: 1
+    targets_xy: [[120, 252]]
+  Scenario-11:
+    agents_xy: [[123, 154]]
+    map_name: Milan_0_256
+    seed: 1
+    targets_xy: [[97, 162]]
+  Scenario-12:
+    agents_xy: [[159, 60]]
+    map_name: Moscow_0_256
+    seed: 1
+    targets_xy: [[114, 121]]
+  Scenario-13:
+    agents_xy: [[143, 157]]
+    map_name: NewYork_1_256
+    seed: 1
+    targets_xy: [[107, 64]]
+  Scenario-14:
+    agents_xy: [[179, 124]]
+    map_name: Paris_1_256
+    seed: 1
+    targets_xy: [[244, 185]]
+  Scenario-15:
+    agents_xy: [[89, 29]]
+    map_name: Paris_2_256
+    seed: 1
+    targets_xy: [[185, 34]]
+  Scenario-16:
+    agents_xy: [[74, 66]]
+    map_name: Berlin_1_256
+    seed: 2
+    targets_xy: [[143, 236]]
+  Scenario-17:
+    agents_xy: [[166, 8]]
+    map_name: Boston_0_256
+    seed: 2
+    targets_xy: [[152, 68]]
+  Scenario-18:
+    agents_xy: [[254, 184]]
+    map_name: London_2_256
+    seed: 2
+    targets_xy: [[104, 88]]
+  Scenario-19:
+    agents_xy: [[103, 249]]
+    map_name: Milan_0_256
+    seed: 2
+    targets_xy: [[65, 119]]
+  Scenario-20:
+    agents_xy: [[42, 79]]
+    map_name: Moscow_0_256
+    seed: 2
+    targets_xy: [[211, 104]]
+  Scenario-21:
+    agents_xy: [[11, 209]]
+    map_name: NewYork_1_256
+    seed: 2
+    targets_xy: [[248, 183]]
+  Scenario-22:
+    agents_xy: [[44, 105]]
+    map_name: Paris_1_256
+    seed: 2
+    targets_xy: [[59, 146]]
+  Scenario-23:
+    agents_xy: [[35, 158]]
+    map_name: Paris_2_256
+    seed: 2
+    targets_xy: [[213, 197]]
+  Scenario-24:
+    agents_xy: [[243, 59]]
+    map_name: Berlin_1_256
+    seed: 3
+    targets_xy: [[110, 114]]
+  Scenario-25:
+    agents_xy: [[74, 188]]
+    map_name: Boston_0_256
+    seed: 3
+    targets_xy: [[245, 39]]
+  Scenario-26:
+    agents_xy: [[92, 158]]
+    map_name: London_2_256
+    seed: 3
+    targets_xy: [[93, 158]]
+  Scenario-27:
+    agents_xy: [[48, 7]]
+    map_name: Milan_0_256
+    seed: 3
+    targets_xy: [[167, 30]]
+  Scenario-28:
+    agents_xy: [[252, 195]]
+    map_name: Moscow_0_256
+    seed: 3
+    targets_xy: [[208, 120]]
+  Scenario-29:
+    agents_xy: [[145, 113]]
+    map_name: NewYork_1_256
+    seed: 3
+    targets_xy: [[221, 206]]
+  Scenario-30:
+    agents_xy: [[60, 121]]
+    map_name: Paris_1_256
+    seed: 3
+    targets_xy: [[110, 111]]
+  Scenario-31:
+    agents_xy: [[202, 137]]
+    map_name: Paris_2_256
+    seed: 3
+    targets_xy: [[218, 254]]
+  Scenario-32:
+    agents_xy: [[145, 149]]
+    map_name: Berlin_1_256
+    seed: 4
+    targets_xy: [[153, 68]]
+  Scenario-33:
+    agents_xy: [[46, 105]]
+    map_name: Boston_0_256
+    seed: 4
+    targets_xy: [[172, 184]]
+  Scenario-34:
+    agents_xy: [[168, 239]]
+    map_name: London_2_256
+    seed: 4
+    targets_xy: [[214, 66]]
+  Scenario-35:
+    agents_xy: [[152, 148]]
+    map_name: Milan_0_256
+    seed: 4
+    targets_xy: [[26, 88]]
+  Scenario-36:
+    agents_xy: [[241, 149]]
+    map_name: Moscow_0_256
+    seed: 4
+    targets_xy: [[61, 38]]
+  Scenario-37:
+    agents_xy: [[245, 79]]
+    map_name: NewYork_1_256
+    seed: 4
+    targets_xy: [[169, 85]]
+  Scenario-38:
+    agents_xy: [[140, 202]]
+    map_name: Paris_1_256
+    seed: 4
+    targets_xy: [[129, 174]]
+  Scenario-39:
+    agents_xy: [[60, 219]]
+    map_name: Paris_2_256
+    seed: 4
+    targets_xy: [[59, 219]]
+  Scenario-40:
+    agents_xy: [[168, 223]]
+    map_name: Berlin_1_256
+    seed: 5
+    targets_xy: [[55, 90]]
+  Scenario-41:
+    agents_xy: [[90, 166]]
+    map_name: Boston_0_256
+    seed: 5
+    targets_xy: [[220, 122]]
+  Scenario-42:
+    agents_xy: [[190, 188]]
+    map_name: London_2_256
+    seed: 5
+    targets_xy: [[182, 184]]
+  Scenario-43:
+    agents_xy: [[59, 9]]
+    map_name: Milan_0_256
+    seed: 5
+    targets_xy: [[122, 82]]
+  Scenario-44:
+    agents_xy: [[218, 73]]
+    map_name: Moscow_0_256
+    seed: 5
+    targets_xy: [[193, 248]]
+  Scenario-45:
+    agents_xy: [[63, 134]]
+    map_name: NewYork_1_256
+    seed: 5
+    targets_xy: [[219, 105]]
+  Scenario-46:
+    agents_xy: [[174, 79]]
+    map_name: Paris_1_256
+    seed: 5
+    targets_xy: [[172, 205]]
+  Scenario-47:
+    agents_xy: [[28, 11]]
+    map_name: Paris_2_256
+    seed: 5
+    targets_xy: [[85, 109]]
+  Scenario-48:
+    agents_xy: [[44, 32]]
+    map_name: Berlin_1_256
+    seed: 6
+    targets_xy: [[171, 67]]
+  Scenario-49:
+    agents_xy: [[210, 34]]
+    map_name: Boston_0_256
+    seed: 6
+    targets_xy: [[31, 87]]
+  Scenario-50:
+    agents_xy: [[128, 128]]
+    map_name: London_2_256
+    seed: 6
+    targets_xy: [[49, 93]]
+  Scenario-51:
+    agents_xy: [[175, 196]]
+    map_name: Milan_0_256
+    seed: 6
+    targets_xy: [[152, 76]]
+  Scenario-52:
+    agents_xy: [[208, 223]]
+    map_name: Moscow_0_256
+    seed: 6
+    targets_xy: [[101, 128]]
+  Scenario-53:
+    agents_xy: [[144, 67]]
+    map_name: NewYork_1_256
+    seed: 6
+    targets_xy: [[172, 245]]
+  Scenario-54:
+    agents_xy: [[252, 30]]
+    map_name: Paris_1_256
+    seed: 6
+    targets_xy: [[87, 181]]
+  Scenario-55:
+    agents_xy: [[225, 254]]
+    map_name: Paris_2_256
+    seed: 6
+    targets_xy: [[120, 241]]
+  Scenario-56:
+    agents_xy: [[197, 129]]
+    map_name: Berlin_1_256
+    seed: 7
+    targets_xy: [[211, 141]]
+  Scenario-57:
+    agents_xy: [[199, 132]]
+    map_name: Boston_0_256
+    seed: 7
+    targets_xy: [[139, 211]]
+  Scenario-58:
+    agents_xy: [[137, 109]]
+    map_name: London_2_256
+    seed: 7
+    targets_xy: [[59, 108]]
+  Scenario-59:
+    agents_xy: [[153, 38]]
+    map_name: Milan_0_256
+    seed: 7
+    targets_xy: [[42, 29]]
+  Scenario-60:
+    agents_xy: [[96, 41]]
+    map_name: Moscow_0_256
+    seed: 7
+    targets_xy: [[53, 26]]
+  Scenario-61:
+    agents_xy: [[233, 57]]
+    map_name: NewYork_1_256
+    seed: 7
+    targets_xy: [[117, 134]]
+  Scenario-62:
+    agents_xy: [[244, 5]]
+    map_name: Paris_1_256
+    seed: 7
+    targets_xy: [[172, 209]]
+  Scenario-63:
+    agents_xy: [[78, 228]]
+    map_name: Paris_2_256
+    seed: 7
+    targets_xy: [[58, 117]]
+  Scenario-64:
+    agents_xy: [[150, 32]]
+    map_name: Berlin_1_256
+    seed: 8
+    targets_xy: [[151, 213]]
+  Scenario-65:
+    agents_xy: [[36, 139]]
+    map_name: Boston_0_256
+    seed: 8
+    targets_xy: [[14, 18]]
+  Scenario-66:
+    agents_xy: [[208, 220]]
+    map_name: London_2_256
+    seed: 8
+    targets_xy: [[1, 244]]
+  Scenario-67:
+    agents_xy: [[218, 231]]
+    map_name: Milan_0_256
+    seed: 8
+    targets_xy: [[60, 16]]
+  Scenario-68:
+    agents_xy: [[145, 139]]
+    map_name: Moscow_0_256
+    seed: 8
+    targets_xy: [[127, 147]]
+  Scenario-69:
+    agents_xy: [[114, 143]]
+    map_name: NewYork_1_256
+    seed: 8
+    targets_xy: [[229, 5]]
+  Scenario-70:
+    agents_xy: [[43, 17]]
+    map_name: Paris_1_256
+    seed: 8
+    targets_xy: [[12, 32]]
+  Scenario-71:
+    agents_xy: [[55, 226]]
+    map_name: Paris_2_256
+    seed: 8
+    targets_xy: [[47, 202]]
+  Scenario-72:
+    agents_xy: [[252, 193]]
+    map_name: Berlin_1_256
+    seed: 9
+    targets_xy: [[189, 77]]
+  Scenario-73:
+    agents_xy: [[236, 150]]
+    map_name: Boston_0_256
+    seed: 9
+    targets_xy: [[234, 21]]
+  Scenario-74:
+    agents_xy: [[6, 215]]
+    map_name: London_2_256
+    seed: 9
+    targets_xy: [[44, 199]]
+  Scenario-75:
+    agents_xy: [[127, 203]]
+    map_name: Milan_0_256
+    seed: 9
+    targets_xy: [[153, 64]]
+  Scenario-76:
+    agents_xy: [[251, 52]]
+    map_name: Moscow_0_256
+    seed: 9
+    targets_xy: [[248, 167]]
+  Scenario-77:
+    agents_xy: [[229, 181]]
+    map_name: NewYork_1_256
+    seed: 9
+    targets_xy: [[3, 255]]
+  Scenario-78:
+    agents_xy: [[129, 207]]
+    map_name: Paris_1_256
+    seed: 9
+    targets_xy: [[225, 214]]
+  Scenario-79:
+    agents_xy: [[159, 215]]
+    map_name: Paris_2_256
+    seed: 9
+    targets_xy: [[246, 205]]
