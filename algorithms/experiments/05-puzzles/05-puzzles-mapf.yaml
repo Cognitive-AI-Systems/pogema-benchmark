@@ -1,31 +1,830 @@
-environment:
-  name: Environment
-  with_animation: False
-  on_target: 'nothing'
-  max_episode_steps: 128
-  observation_type: 'MAPF'
-  collision_system: 'soft'
-  #obs_radius: 4
-  seed:
-    grid_search: [0, 1,2, 3, 4, 5, 6, 7, 8, 9]
-  num_agents:
-    grid_search: [ 2, 3, 4 ]
-  map_name:
-    grid_search: [
-        puzzle-00, puzzle-01, puzzle-02, puzzle-03, puzzle-04, puzzle-05, puzzle-06, puzzle-07, 
-        puzzle-08, puzzle-09, puzzle-10, puzzle-11, puzzle-12, puzzle-13, puzzle-14, puzzle-15
-    ]
-
 algorithms:
   LaCAM:
     name: LaCAM
   SCRIMP:
     name: SCRIMP
-  #DCC:  # requires obs_radius: 4 in environment
+  #DCC: # requires obs_radius: 4 in environment
   #  name: DCC
-
+environment:
+  collision_system: soft
+  map_name:
+    grid_search: [puzzle-00, puzzle-01, puzzle-02, puzzle-03, puzzle-04, puzzle-05,
+      puzzle-06, puzzle-07, puzzle-08, puzzle-09, puzzle-10, puzzle-11, puzzle-12,
+      puzzle-13, puzzle-14, puzzle-15]
+  max_episode_steps: 128
+  name: Environment
+  num_agents:
+    grid_search: [2, 3, 4]
+  observation_type: MAPF
+  on_target: nothing
+  seed:
+    grid_search: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  with_animation: false
+  #obs_radius: 4 # required for DCC
 results_views:
   TabularView1:
+    drop_keys: [seed, map_name, ISR, ep_length, runtime, avg_agents_density, makespan,
+      num_agents, a_collisions, o_collisions]
+    print_results: true
     type: tabular
-    drop_keys: [ seed, map_name ]
-    print_results: True
+scenarios:
+  Scenario-032:
+    agents_xy: [[0, 2], [0, 3], [0, 0], [2, 1]]
+    map_name: puzzle-00
+    seed: 0
+    targets_xy: [[3, 0], [3, 4], [1, 0], [1, 1]]
+  Scenario-033:
+    agents_xy: [[0, 4], [1, 0], [0, 2], [2, 0]]
+    map_name: puzzle-01
+    seed: 0
+    targets_xy: [[3, 1], [3, 3], [1, 1], [1, 2]]
+  Scenario-034:
+    agents_xy: [[0, 4], [1, 0], [0, 0], [2, 1]]
+    map_name: puzzle-02
+    seed: 0
+    targets_xy: [[2, 4], [3, 3], [1, 1], [1, 4]]
+  Scenario-035:
+    agents_xy: [[0, 4], [1, 2], [3, 1], [0, 3]]
+    map_name: puzzle-03
+    seed: 0
+    targets_xy: [[4, 4], [0, 2], [4, 1], [2, 3]]
+  Scenario-036:
+    agents_xy: [[0, 2], [0, 3], [0, 0], [1, 4]]
+    map_name: puzzle-04
+    seed: 0
+    targets_xy: [[3, 2], [3, 4], [0, 4], [1, 0]]
+  Scenario-037:
+    agents_xy: [[2, 2], [2, 0], [2, 1], [3, 0]]
+    map_name: puzzle-05
+    seed: 0
+    targets_xy: [[2, 3], [2, 4], [3, 4], [0, 2]]
+  Scenario-038:
+    agents_xy: [[2, 0], [0, 4], [2, 1], [4, 4]]
+    map_name: puzzle-06
+    seed: 0
+    targets_xy: [[1, 4], [2, 2], [3, 0], [4, 0]]
+  Scenario-039:
+    agents_xy: [[0, 2], [0, 3], [0, 0], [1, 4]]
+    map_name: puzzle-07
+    seed: 0
+    targets_xy: [[2, 4], [3, 0], [0, 4], [1, 0]]
+  Scenario-040:
+    agents_xy: [[0, 2], [0, 3], [0, 0], [1, 4]]
+    map_name: puzzle-08
+    seed: 0
+    targets_xy: [[3, 2], [3, 4], [0, 4], [1, 0]]
+  Scenario-041:
+    agents_xy: [[0, 4], [0, 1], [1, 3], [4, 0]]
+    map_name: puzzle-09
+    seed: 0
+    targets_xy: [[0, 3], [1, 4], [2, 4], [3, 2]]
+  Scenario-042:
+    agents_xy: [[0, 3], [0, 4], [0, 0], [2, 0]]
+    map_name: puzzle-10
+    seed: 0
+    targets_xy: [[2, 3], [3, 1], [1, 0], [1, 3]]
+  Scenario-043:
+    agents_xy: [[1, 0], [1, 1], [0, 0], [2, 2]]
+    map_name: puzzle-11
+    seed: 0
+    targets_xy: [[3, 3], [3, 1], [1, 3], [1, 4]]
+  Scenario-044:
+    agents_xy: [[2, 2], [2, 0], [2, 1], [3, 2]]
+    map_name: puzzle-12
+    seed: 0
+    targets_xy: [[2, 3], [2, 4], [4, 2], [0, 2]]
+  Scenario-045:
+    agents_xy: [[1, 0], [1, 1], [0, 0], [2, 1]]
+    map_name: puzzle-13
+    seed: 0
+    targets_xy: [[3, 2], [3, 1], [1, 2], [1, 3]]
+  Scenario-046:
+    agents_xy: [[0, 3], [0, 4], [0, 0], [2, 0]]
+    map_name: puzzle-14
+    seed: 0
+    targets_xy: [[2, 4], [3, 2], [1, 1], [1, 2]]
+  Scenario-047:
+    agents_xy: [[0, 2], [0, 3], [0, 0], [1, 4]]
+    map_name: puzzle-15
+    seed: 0
+    targets_xy: [[3, 0], [3, 4], [0, 4], [1, 0]]
+  Scenario-080:
+    agents_xy: [[0, 1], [4, 2], [2, 1], [0, 3]]
+    map_name: puzzle-00
+    seed: 1
+    targets_xy: [[3, 0], [4, 3], [4, 0], [1, 0]]
+  Scenario-081:
+    agents_xy: [[3, 3], [3, 2], [3, 1], [4, 3]]
+    map_name: puzzle-01
+    seed: 1
+    targets_xy: [[0, 3], [4, 1], [2, 0], [4, 0]]
+  Scenario-082:
+    agents_xy: [[3, 3], [3, 0], [2, 4], [4, 3]]
+    map_name: puzzle-02
+    seed: 1
+    targets_xy: [[0, 3], [4, 2], [2, 1], [4, 1]]
+  Scenario-083:
+    agents_xy: [[0, 1], [4, 3], [1, 4], [2, 4]]
+    map_name: puzzle-03
+    seed: 1
+    targets_xy: [[2, 2], [4, 1], [2, 3], [4, 2]]
+  Scenario-084:
+    agents_xy: [[0, 1], [4, 2], [1, 4], [0, 3]]
+    map_name: puzzle-04
+    seed: 1
+    targets_xy: [[3, 2], [4, 3], [4, 0], [0, 4]]
+  Scenario-085:
+    agents_xy: [[3, 0], [1, 2], [2, 0], [3, 4]]
+    map_name: puzzle-05
+    seed: 1
+    targets_xy: [[0, 2], [2, 2], [2, 3], [2, 4]]
+  Scenario-086:
+    agents_xy: [[1, 3], [3, 0], [4, 4], [2, 2]]
+    map_name: puzzle-06
+    seed: 1
+    targets_xy: [[4, 0], [3, 4], [2, 1], [3, 2]]
+  Scenario-087:
+    agents_xy: [[0, 1], [4, 1], [1, 4], [0, 3]]
+    map_name: puzzle-07
+    seed: 1
+    targets_xy: [[2, 4], [4, 2], [3, 4], [0, 4]]
+  Scenario-088:
+    agents_xy: [[0, 1], [4, 2], [1, 4], [0, 3]]
+    map_name: puzzle-08
+    seed: 1
+    targets_xy: [[3, 2], [4, 3], [4, 0], [0, 4]]
+  Scenario-089:
+    agents_xy: [[0, 2], [2, 4], [4, 0], [1, 4]]
+    map_name: puzzle-09
+    seed: 1
+    targets_xy: [[3, 2], [3, 1], [1, 3], [3, 0]]
+  Scenario-090:
+    agents_xy: [[3, 1], [2, 4], [2, 3], [4, 3]]
+    map_name: puzzle-10
+    seed: 1
+    targets_xy: [[0, 1], [4, 2], [2, 0], [4, 1]]
+  Scenario-091:
+    agents_xy: [[0, 4], [2, 2], [4, 4], [1, 4]]
+    map_name: puzzle-11
+    seed: 1
+    targets_xy: [[3, 4], [3, 1], [1, 3], [2, 3]]
+  Scenario-092:
+    agents_xy: [[3, 2], [1, 2], [2, 0], [4, 2]]
+    map_name: puzzle-12
+    seed: 1
+    targets_xy: [[0, 2], [2, 2], [2, 3], [2, 4]]
+  Scenario-093:
+    agents_xy: [[0, 3], [2, 1], [4, 4], [1, 3]]
+    map_name: puzzle-13
+    seed: 1
+    targets_xy: [[3, 3], [3, 1], [1, 2], [2, 3]]
+  Scenario-094:
+    agents_xy: [[3, 2], [3, 1], [2, 4], [4, 3]]
+    map_name: puzzle-14
+    seed: 1
+    targets_xy: [[0, 1], [4, 1], [2, 0], [4, 0]]
+  Scenario-095:
+    agents_xy: [[0, 1], [4, 2], [1, 4], [0, 3]]
+    map_name: puzzle-15
+    seed: 1
+    targets_xy: [[3, 0], [4, 3], [4, 0], [0, 4]]
+  Scenario-128:
+    agents_xy: [[1, 3], [2, 1], [0, 2], [0, 0]]
+    map_name: puzzle-00
+    seed: 2
+    targets_xy: [[4, 3], [3, 0], [3, 4], [4, 2]]
+  Scenario-129:
+    agents_xy: [[1, 3], [2, 0], [0, 4], [0, 2]]
+    map_name: puzzle-01
+    seed: 2
+    targets_xy: [[4, 3], [3, 1], [3, 2], [4, 1]]
+  Scenario-130:
+    agents_xy: [[2, 0], [2, 1], [0, 4], [0, 0]]
+    map_name: puzzle-02
+    seed: 2
+    targets_xy: [[4, 3], [2, 4], [3, 0], [4, 2]]
+  Scenario-131:
+    agents_xy: [[1, 2], [1, 4], [0, 2], [0, 0]]
+    map_name: puzzle-03
+    seed: 2
+    targets_xy: [[4, 3], [2, 2], [2, 3], [4, 2]]
+  Scenario-132:
+    agents_xy: [[1, 2], [1, 4], [0, 2], [0, 0]]
+    map_name: puzzle-04
+    seed: 2
+    targets_xy: [[4, 3], [3, 2], [3, 4], [4, 2]]
+  Scenario-133:
+    agents_xy: [[2, 0], [2, 4], [3, 4], [2, 2]]
+    map_name: puzzle-05
+    seed: 2
+    targets_xy: [[3, 0], [2, 3], [2, 1], [0, 2]]
+  Scenario-134:
+    agents_xy: [[1, 4], [0, 4], [4, 2], [4, 0]]
+    map_name: puzzle-06
+    seed: 2
+    targets_xy: [[4, 3], [2, 4], [3, 0], [4, 4]]
+  Scenario-135:
+    agents_xy: [[1, 2], [1, 4], [0, 2], [0, 0]]
+    map_name: puzzle-07
+    seed: 2
+    targets_xy: [[4, 2], [2, 4], [3, 0], [4, 1]]
+  Scenario-136:
+    agents_xy: [[1, 2], [1, 4], [0, 2], [0, 0]]
+    map_name: puzzle-08
+    seed: 2
+    targets_xy: [[4, 3], [3, 2], [3, 4], [4, 2]]
+  Scenario-137:
+    agents_xy: [[0, 3], [0, 1], [3, 3], [3, 2]]
+    map_name: puzzle-09
+    seed: 2
+    targets_xy: [[3, 4], [2, 0], [2, 4], [4, 0]]
+  Scenario-138:
+    agents_xy: [[1, 4], [2, 0], [0, 3], [0, 0]]
+    map_name: puzzle-10
+    seed: 2
+    targets_xy: [[4, 3], [2, 3], [2, 4], [4, 2]]
+  Scenario-139:
+    agents_xy: [[3, 0], [2, 1], [1, 0], [3, 4]]
+    map_name: puzzle-11
+    seed: 2
+    targets_xy: [[2, 2], [4, 0], [0, 0], [4, 4]]
+  Scenario-140:
+    agents_xy: [[2, 0], [2, 4], [4, 2], [2, 2]]
+    map_name: puzzle-12
+    seed: 2
+    targets_xy: [[3, 2], [2, 3], [2, 1], [0, 2]]
+  Scenario-141:
+    agents_xy: [[3, 0], [1, 4], [1, 0], [3, 3]]
+    map_name: puzzle-13
+    seed: 2
+    targets_xy: [[2, 1], [4, 3], [0, 0], [4, 4]]
+  Scenario-142:
+    agents_xy: [[1, 3], [2, 0], [0, 3], [0, 0]]
+    map_name: puzzle-14
+    seed: 2
+    targets_xy: [[4, 3], [2, 4], [3, 1], [4, 1]]
+  Scenario-143:
+    agents_xy: [[1, 2], [1, 4], [0, 2], [0, 0]]
+    map_name: puzzle-15
+    seed: 2
+    targets_xy: [[4, 3], [3, 0], [3, 4], [4, 2]]
+  Scenario-176:
+    agents_xy: [[3, 0], [0, 3], [3, 4], [4, 0]]
+    map_name: puzzle-00
+    seed: 3
+    targets_xy: [[4, 1], [4, 4], [2, 3], [4, 3]]
+  Scenario-177:
+    agents_xy: [[4, 1], [4, 4], [1, 0], [4, 0]]
+    map_name: puzzle-01
+    seed: 3
+    targets_xy: [[3, 3], [2, 1], [3, 4], [3, 1]]
+  Scenario-178:
+    agents_xy: [[4, 2], [4, 4], [1, 0], [4, 1]]
+    map_name: puzzle-02
+    seed: 3
+    targets_xy: [[3, 3], [2, 2], [4, 0], [2, 4]]
+  Scenario-179:
+    agents_xy: [[4, 1], [4, 3], [0, 3], [3, 4]]
+    map_name: puzzle-03
+    seed: 3
+    targets_xy: [[2, 4], [2, 0], [3, 1], [2, 2]]
+  Scenario-180:
+    agents_xy: [[3, 2], [0, 3], [3, 4], [4, 0]]
+    map_name: puzzle-04
+    seed: 3
+    targets_xy: [[4, 1], [4, 4], [2, 2], [4, 3]]
+  Scenario-181:
+    agents_xy: [[3, 0], [2, 0], [2, 2], [2, 3]]
+    map_name: puzzle-05
+    seed: 3
+    targets_xy: [[0, 2], [1, 2], [2, 4], [2, 1]]
+  Scenario-182:
+    agents_xy: [[4, 0], [4, 4], [4, 3], [1, 3]]
+    map_name: puzzle-06
+    seed: 3
+    targets_xy: [[3, 4], [1, 4], [0, 4], [2, 1]]
+  Scenario-183:
+    agents_xy: [[2, 4], [0, 3], [3, 0], [3, 4]]
+    map_name: puzzle-07
+    seed: 3
+    targets_xy: [[4, 0], [4, 3], [2, 0], [4, 2]]
+  Scenario-184:
+    agents_xy: [[3, 2], [0, 3], [3, 4], [4, 0]]
+    map_name: puzzle-08
+    seed: 3
+    targets_xy: [[4, 1], [4, 4], [2, 2], [4, 3]]
+  Scenario-185:
+    agents_xy: [[3, 2], [4, 0], [3, 4], [0, 2]]
+    map_name: puzzle-09
+    seed: 3
+    targets_xy: [[3, 1], [0, 3], [0, 1], [1, 3]]
+  Scenario-186:
+    agents_xy: [[4, 2], [4, 4], [0, 4], [4, 1]]
+    map_name: puzzle-10
+    seed: 3
+    targets_xy: [[3, 1], [2, 1], [4, 0], [2, 3]]
+  Scenario-187:
+    agents_xy: [[3, 3], [4, 4], [4, 0], [3, 1]]
+    map_name: puzzle-11
+    seed: 3
+    targets_xy: [[3, 0], [1, 0], [0, 0], [0, 4]]
+  Scenario-188:
+    agents_xy: [[3, 2], [2, 0], [2, 2], [2, 3]]
+    map_name: puzzle-12
+    seed: 3
+    targets_xy: [[0, 2], [1, 2], [2, 4], [2, 1]]
+  Scenario-189:
+    agents_xy: [[3, 2], [4, 4], [4, 3], [3, 1]]
+    map_name: puzzle-13
+    seed: 3
+    targets_xy: [[3, 0], [1, 0], [0, 0], [0, 3]]
+  Scenario-190:
+    agents_xy: [[4, 1], [4, 4], [0, 4], [4, 0]]
+    map_name: puzzle-14
+    seed: 3
+    targets_xy: [[3, 2], [2, 1], [3, 3], [2, 4]]
+  Scenario-191:
+    agents_xy: [[3, 0], [0, 3], [3, 4], [4, 0]]
+    map_name: puzzle-15
+    seed: 3
+    targets_xy: [[4, 1], [4, 4], [2, 0], [4, 3]]
+  Scenario-224:
+    agents_xy: [[2, 3], [0, 1], [4, 3], [2, 4]]
+    map_name: puzzle-00
+    seed: 4
+    targets_xy: [[0, 0], [4, 4], [0, 2], [2, 1]]
+  Scenario-225:
+    agents_xy: [[0, 2], [2, 2], [1, 2], [0, 3]]
+    map_name: puzzle-01
+    seed: 4
+    targets_xy: [[2, 0], [4, 3], [2, 1], [3, 1]]
+  Scenario-226:
+    agents_xy: [[0, 0], [2, 3], [1, 4], [0, 3]]
+    map_name: puzzle-02
+    seed: 4
+    targets_xy: [[2, 1], [4, 3], [2, 2], [2, 4]]
+  Scenario-227:
+    agents_xy: [[0, 0], [2, 0], [4, 3], [1, 4]]
+    map_name: puzzle-03
+    seed: 4
+    targets_xy: [[3, 1], [2, 2], [1, 1], [2, 1]]
+  Scenario-228:
+    agents_xy: [[2, 2], [0, 1], [4, 3], [3, 0]]
+    map_name: puzzle-04
+    seed: 4
+    targets_xy: [[0, 0], [4, 4], [0, 2], [1, 4]]
+  Scenario-229:
+    agents_xy: [[0, 2], [2, 0], [2, 4], [2, 1]]
+    map_name: puzzle-05
+    seed: 4
+    targets_xy: [[1, 2], [3, 4], [3, 0], [2, 2]]
+  Scenario-230:
+    agents_xy: [[4, 3], [4, 0], [1, 4], [3, 4]]
+    map_name: puzzle-06
+    seed: 4
+    targets_xy: [[1, 3], [0, 4], [3, 0], [3, 2]]
+  Scenario-231:
+    agents_xy: [[2, 0], [0, 1], [4, 2], [2, 2]]
+    map_name: puzzle-07
+    seed: 4
+    targets_xy: [[0, 0], [4, 3], [0, 2], [1, 4]]
+  Scenario-232:
+    agents_xy: [[2, 2], [0, 1], [4, 3], [3, 0]]
+    map_name: puzzle-08
+    seed: 4
+    targets_xy: [[0, 0], [4, 4], [0, 2], [1, 4]]
+  Scenario-233:
+    agents_xy: [[3, 4], [3, 2], [0, 3], [3, 1]]
+    map_name: puzzle-09
+    seed: 4
+    targets_xy: [[0, 2], [0, 1], [2, 4], [3, 0]]
+  Scenario-234:
+    agents_xy: [[0, 0], [2, 2], [1, 3], [0, 1]]
+    map_name: puzzle-10
+    seed: 4
+    targets_xy: [[2, 0], [4, 3], [2, 1], [2, 3]]
+  Scenario-235:
+    agents_xy: [[3, 4], [3, 1], [1, 0], [3, 0]]
+    map_name: puzzle-11
+    seed: 4
+    targets_xy: [[0, 4], [0, 0], [2, 2], [2, 3]]
+  Scenario-236:
+    agents_xy: [[0, 2], [2, 0], [2, 4], [2, 1]]
+    map_name: puzzle-12
+    seed: 4
+    targets_xy: [[1, 2], [4, 2], [3, 2], [2, 2]]
+  Scenario-237:
+    agents_xy: [[3, 3], [3, 1], [1, 0], [3, 0]]
+    map_name: puzzle-13
+    seed: 4
+    targets_xy: [[0, 3], [0, 0], [2, 1], [2, 3]]
+  Scenario-238:
+    agents_xy: [[0, 0], [2, 3], [1, 2], [0, 1]]
+    map_name: puzzle-14
+    seed: 4
+    targets_xy: [[2, 0], [4, 3], [2, 1], [2, 4]]
+  Scenario-239:
+    agents_xy: [[2, 0], [0, 1], [4, 3], [2, 4]]
+    map_name: puzzle-15
+    seed: 4
+    targets_xy: [[0, 0], [4, 4], [0, 2], [1, 4]]
+  Scenario-272:
+    agents_xy: [[2, 1], [4, 0], [4, 4], [3, 4]]
+    map_name: puzzle-00
+    seed: 5
+    targets_xy: [[0, 3], [0, 1], [2, 4], [0, 2]]
+  Scenario-273:
+    agents_xy: [[2, 0], [1, 0], [3, 4], [3, 2]]
+    map_name: puzzle-01
+    seed: 5
+    targets_xy: [[4, 4], [0, 3], [2, 2], [3, 3]]
+  Scenario-274:
+    agents_xy: [[2, 1], [1, 0], [4, 0], [3, 0]]
+    map_name: puzzle-02
+    seed: 5
+    targets_xy: [[4, 4], [0, 3], [2, 3], [3, 3]]
+  Scenario-275:
+    agents_xy: [[2, 1], [0, 3], [0, 1], [4, 4]]
+    map_name: puzzle-03
+    seed: 5
+    targets_xy: [[4, 3], [1, 4], [4, 1], [3, 1]]
+  Scenario-276:
+    agents_xy: [[1, 4], [4, 0], [4, 4], [3, 4]]
+    map_name: puzzle-04
+    seed: 5
+    targets_xy: [[0, 3], [0, 1], [3, 0], [0, 2]]
+  Scenario-277:
+    agents_xy: [[1, 2], [2, 0], [0, 2], [2, 3]]
+    map_name: puzzle-05
+    seed: 5
+    targets_xy: [[2, 2], [2, 1], [3, 0], [2, 4]]
+  Scenario-278:
+    agents_xy: [[3, 4], [4, 0], [3, 0], [1, 4]]
+    map_name: puzzle-06
+    seed: 5
+    targets_xy: [[2, 0], [1, 3], [4, 4], [2, 1]]
+  Scenario-279:
+    agents_xy: [[1, 4], [3, 4], [4, 3], [3, 0]]
+    map_name: puzzle-07
+    seed: 5
+    targets_xy: [[0, 3], [0, 1], [2, 2], [0, 2]]
+  Scenario-280:
+    agents_xy: [[1, 4], [4, 0], [4, 4], [3, 4]]
+    map_name: puzzle-08
+    seed: 5
+    targets_xy: [[0, 3], [0, 1], [3, 0], [0, 2]]
+  Scenario-281:
+    agents_xy: [[3, 1], [3, 2], [2, 4], [0, 3]]
+    map_name: puzzle-09
+    seed: 5
+    targets_xy: [[0, 4], [0, 2], [4, 0], [1, 3]]
+  Scenario-282:
+    agents_xy: [[2, 0], [0, 4], [4, 0], [2, 4]]
+    map_name: puzzle-10
+    seed: 5
+    targets_xy: [[4, 4], [0, 1], [2, 2], [3, 1]]
+  Scenario-283:
+    agents_xy: [[2, 2], [3, 3], [4, 4], [3, 1]]
+    map_name: puzzle-11
+    seed: 5
+    targets_xy: [[1, 1], [0, 4], [3, 0], [1, 0]]
+  Scenario-284:
+    agents_xy: [[1, 2], [2, 0], [0, 2], [2, 3]]
+    map_name: puzzle-12
+    seed: 5
+    targets_xy: [[2, 2], [2, 1], [3, 2], [2, 4]]
+  Scenario-285:
+    agents_xy: [[2, 1], [3, 2], [4, 4], [3, 1]]
+    map_name: puzzle-13
+    seed: 5
+    targets_xy: [[1, 1], [0, 3], [3, 0], [1, 0]]
+  Scenario-286:
+    agents_xy: [[2, 0], [0, 4], [3, 3], [3, 1]]
+    map_name: puzzle-14
+    seed: 5
+    targets_xy: [[4, 4], [0, 1], [2, 3], [3, 2]]
+  Scenario-287:
+    agents_xy: [[1, 4], [4, 0], [4, 4], [3, 4]]
+    map_name: puzzle-15
+    seed: 5
+    targets_xy: [[0, 3], [0, 1], [2, 4], [0, 2]]
+  Scenario-320:
+    agents_xy: [[0, 2], [3, 0], [1, 0], [4, 2]]
+    map_name: puzzle-00
+    seed: 6
+    targets_xy: [[4, 4], [0, 1], [4, 1], [2, 3]]
+  Scenario-321:
+    agents_xy: [[0, 4], [3, 1], [1, 1], [4, 0]]
+    map_name: puzzle-01
+    seed: 6
+    targets_xy: [[4, 3], [0, 3], [3, 4], [2, 1]]
+  Scenario-322:
+    agents_xy: [[0, 4], [2, 4], [1, 1], [4, 1]]
+    map_name: puzzle-02
+    seed: 6
+    targets_xy: [[4, 3], [0, 3], [4, 0], [2, 2]]
+  Scenario-323:
+    agents_xy: [[0, 2], [2, 3], [0, 4], [3, 2]]
+    map_name: puzzle-03
+    seed: 6
+    targets_xy: [[4, 3], [0, 1], [4, 4], [2, 0]]
+  Scenario-324:
+    agents_xy: [[0, 2], [3, 2], [0, 4], [4, 2]]
+    map_name: puzzle-04
+    seed: 6
+    targets_xy: [[4, 4], [0, 1], [4, 1], [2, 2]]
+  Scenario-325:
+    agents_xy: [[2, 0], [2, 1], [0, 2], [2, 2]]
+    map_name: puzzle-05
+    seed: 6
+    targets_xy: [[2, 4], [3, 4], [2, 3], [3, 0]]
+  Scenario-326:
+    agents_xy: [[2, 4], [3, 2], [4, 3], [1, 4]]
+    map_name: puzzle-06
+    seed: 6
+    targets_xy: [[4, 0], [4, 2], [2, 1], [4, 4]]
+  Scenario-327:
+    agents_xy: [[0, 2], [2, 4], [0, 4], [4, 1]]
+    map_name: puzzle-07
+    seed: 6
+    targets_xy: [[4, 3], [0, 1], [4, 0], [2, 0]]
+  Scenario-328:
+    agents_xy: [[0, 2], [3, 2], [0, 4], [4, 2]]
+    map_name: puzzle-08
+    seed: 6
+    targets_xy: [[4, 4], [0, 1], [4, 1], [2, 2]]
+  Scenario-329:
+    agents_xy: [[2, 0], [3, 0], [3, 4], [0, 3]]
+    map_name: puzzle-09
+    seed: 6
+    targets_xy: [[3, 2], [3, 3], [1, 3], [4, 0]]
+  Scenario-330:
+    agents_xy: [[0, 3], [2, 3], [1, 0], [4, 1]]
+    map_name: puzzle-10
+    seed: 6
+    targets_xy: [[4, 3], [0, 1], [4, 0], [2, 1]]
+  Scenario-331:
+    agents_xy: [[2, 1], [2, 3], [3, 4], [1, 0]]
+    map_name: puzzle-11
+    seed: 6
+    targets_xy: [[3, 1], [3, 3], [1, 3], [4, 0]]
+  Scenario-332:
+    agents_xy: [[2, 0], [2, 1], [0, 2], [2, 2]]
+    map_name: puzzle-12
+    seed: 6
+    targets_xy: [[2, 4], [4, 2], [2, 3], [3, 2]]
+  Scenario-333:
+    agents_xy: [[1, 4], [2, 3], [3, 3], [1, 0]]
+    map_name: puzzle-13
+    seed: 6
+    targets_xy: [[3, 1], [3, 2], [1, 2], [4, 3]]
+  Scenario-334:
+    agents_xy: [[0, 3], [2, 4], [1, 1], [4, 0]]
+    map_name: puzzle-14
+    seed: 6
+    targets_xy: [[4, 3], [0, 1], [3, 3], [2, 1]]
+  Scenario-335:
+    agents_xy: [[0, 2], [3, 0], [0, 4], [4, 2]]
+    map_name: puzzle-15
+    seed: 6
+    targets_xy: [[4, 4], [0, 1], [4, 1], [2, 0]]
+  Scenario-368:
+    agents_xy: [[0, 3], [1, 3], [0, 1], [0, 0]]
+    map_name: puzzle-00
+    seed: 7
+    targets_xy: [[4, 4], [2, 3], [3, 0], [2, 1]]
+  Scenario-369:
+    agents_xy: [[1, 0], [1, 3], [0, 3], [0, 2]]
+    map_name: puzzle-01
+    seed: 7
+    targets_xy: [[4, 0], [2, 1], [3, 1], [2, 0]]
+  Scenario-370:
+    agents_xy: [[1, 0], [2, 0], [0, 3], [0, 0]]
+    map_name: puzzle-02
+    seed: 7
+    targets_xy: [[4, 1], [2, 2], [2, 4], [2, 1]]
+  Scenario-371:
+    agents_xy: [[0, 3], [2, 4], [3, 2], [2, 2]]
+    map_name: puzzle-03
+    seed: 7
+    targets_xy: [[2, 0], [3, 1], [4, 1], [3, 4]]
+  Scenario-372:
+    agents_xy: [[0, 3], [1, 2], [0, 1], [0, 0]]
+    map_name: puzzle-04
+    seed: 7
+    targets_xy: [[4, 4], [2, 2], [3, 2], [1, 4]]
+  Scenario-373:
+    agents_xy: [[3, 4], [3, 0], [2, 1], [2, 0]]
+    map_name: puzzle-05
+    seed: 7
+    targets_xy: [[0, 2], [1, 2], [2, 4], [2, 2]]
+  Scenario-374:
+    agents_xy: [[2, 0], [3, 2], [3, 0], [2, 1]]
+    map_name: puzzle-06
+    seed: 7
+    targets_xy: [[4, 3], [2, 4], [0, 4], [1, 3]]
+  Scenario-375:
+    agents_xy: [[0, 3], [1, 2], [0, 1], [0, 0]]
+    map_name: puzzle-07
+    seed: 7
+    targets_xy: [[4, 3], [2, 0], [2, 4], [1, 4]]
+  Scenario-376:
+    agents_xy: [[0, 3], [1, 2], [0, 1], [0, 0]]
+    map_name: puzzle-08
+    seed: 7
+    targets_xy: [[4, 4], [2, 2], [3, 2], [1, 4]]
+  Scenario-377:
+    agents_xy: [[0, 4], [3, 0], [2, 4], [1, 3]]
+    map_name: puzzle-09
+    seed: 7
+    targets_xy: [[3, 4], [2, 0], [0, 1], [0, 2]]
+  Scenario-378:
+    agents_xy: [[0, 4], [1, 4], [0, 1], [0, 0]]
+    map_name: puzzle-10
+    seed: 7
+    targets_xy: [[4, 1], [2, 1], [2, 3], [2, 0]]
+  Scenario-379:
+    agents_xy: [[1, 1], [2, 1], [0, 4], [0, 0]]
+    map_name: puzzle-11
+    seed: 7
+    targets_xy: [[3, 1], [2, 3], [4, 0], [2, 2]]
+  Scenario-380:
+    agents_xy: [[4, 2], [3, 2], [2, 1], [2, 0]]
+    map_name: puzzle-12
+    seed: 7
+    targets_xy: [[0, 2], [1, 2], [2, 4], [2, 2]]
+  Scenario-381:
+    agents_xy: [[1, 1], [1, 4], [0, 3], [0, 0]]
+    map_name: puzzle-13
+    seed: 7
+    targets_xy: [[3, 1], [2, 3], [4, 3], [2, 1]]
+  Scenario-382:
+    agents_xy: [[0, 4], [1, 3], [0, 1], [0, 0]]
+    map_name: puzzle-14
+    seed: 7
+    targets_xy: [[4, 0], [2, 1], [2, 4], [2, 0]]
+  Scenario-383:
+    agents_xy: [[0, 3], [1, 2], [0, 1], [0, 0]]
+    map_name: puzzle-15
+    seed: 7
+    targets_xy: [[4, 4], [2, 0], [3, 0], [1, 4]]
+  Scenario-416:
+    agents_xy: [[2, 1], [0, 3], [4, 3], [4, 2]]
+    map_name: puzzle-00
+    seed: 8
+    targets_xy: [[4, 1], [0, 0], [4, 0], [2, 3]]
+  Scenario-417:
+    agents_xy: [[2, 2], [0, 2], [3, 1], [2, 1]]
+    map_name: puzzle-01
+    seed: 8
+    targets_xy: [[4, 3], [2, 0], [1, 0], [3, 3]]
+  Scenario-418:
+    agents_xy: [[2, 3], [0, 0], [2, 4], [2, 2]]
+    map_name: puzzle-02
+    seed: 8
+    targets_xy: [[4, 3], [2, 1], [1, 0], [3, 3]]
+  Scenario-419:
+    agents_xy: [[3, 4], [4, 3], [3, 1], [4, 1]]
+    map_name: puzzle-03
+    seed: 8
+    targets_xy: [[2, 0], [2, 2], [0, 0], [2, 3]]
+  Scenario-420:
+    agents_xy: [[1, 4], [0, 3], [4, 3], [4, 2]]
+    map_name: puzzle-04
+    seed: 8
+    targets_xy: [[4, 1], [0, 0], [4, 0], [2, 2]]
+  Scenario-421:
+    agents_xy: [[0, 2], [2, 1], [3, 4], [1, 2]]
+    map_name: puzzle-05
+    seed: 8
+    targets_xy: [[2, 4], [2, 3], [3, 0], [2, 0]]
+  Scenario-422:
+    agents_xy: [[4, 2], [2, 0], [3, 2], [4, 3]]
+    map_name: puzzle-06
+    seed: 8
+    targets_xy: [[0, 4], [3, 0], [1, 3], [2, 4]]
+  Scenario-423:
+    agents_xy: [[1, 4], [0, 3], [4, 2], [4, 1]]
+    map_name: puzzle-07
+    seed: 8
+    targets_xy: [[4, 0], [0, 0], [3, 4], [2, 0]]
+  Scenario-424:
+    agents_xy: [[1, 4], [0, 3], [4, 3], [4, 2]]
+    map_name: puzzle-08
+    seed: 8
+    targets_xy: [[4, 1], [0, 0], [4, 0], [2, 2]]
+  Scenario-425:
+    agents_xy: [[3, 3], [0, 4], [3, 0], [3, 4]]
+    map_name: puzzle-09
+    seed: 8
+    targets_xy: [[0, 1], [2, 4], [0, 2], [2, 0]]
+  Scenario-426:
+    agents_xy: [[2, 2], [0, 0], [2, 3], [2, 1]]
+    map_name: puzzle-10
+    seed: 8
+    targets_xy: [[4, 3], [2, 0], [0, 4], [3, 1]]
+  Scenario-427:
+    agents_xy: [[3, 3], [2, 3], [2, 2], [0, 4]]
+    map_name: puzzle-11
+    seed: 8
+    targets_xy: [[1, 1], [0, 0], [3, 4], [4, 0]]
+  Scenario-428:
+    agents_xy: [[0, 2], [2, 1], [4, 2], [1, 2]]
+    map_name: puzzle-12
+    seed: 8
+    targets_xy: [[2, 4], [2, 3], [3, 2], [2, 0]]
+  Scenario-429:
+    agents_xy: [[3, 2], [2, 3], [2, 1], [0, 3]]
+    map_name: puzzle-13
+    seed: 8
+    targets_xy: [[1, 1], [0, 0], [3, 3], [4, 3]]
+  Scenario-430:
+    agents_xy: [[2, 3], [0, 0], [2, 4], [2, 1]]
+    map_name: puzzle-14
+    seed: 8
+    targets_xy: [[4, 3], [2, 0], [0, 4], [3, 2]]
+  Scenario-431:
+    agents_xy: [[1, 4], [0, 3], [4, 3], [4, 2]]
+    map_name: puzzle-15
+    seed: 8
+    targets_xy: [[4, 1], [0, 0], [4, 0], [2, 0]]
+  Scenario-464:
+    agents_xy: [[3, 0], [1, 3], [4, 1], [2, 1]]
+    map_name: puzzle-00
+    seed: 9
+    targets_xy: [[0, 3], [2, 4], [0, 2], [4, 0]]
+  Scenario-465:
+    agents_xy: [[3, 4], [1, 0], [1, 3], [0, 4]]
+    map_name: puzzle-01
+    seed: 9
+    targets_xy: [[3, 1], [2, 0], [4, 1], [2, 2]]
+  Scenario-466:
+    agents_xy: [[4, 0], [1, 0], [2, 0], [0, 4]]
+    map_name: puzzle-02
+    seed: 9
+    targets_xy: [[2, 4], [2, 1], [4, 2], [2, 3]]
+  Scenario-467:
+    agents_xy: [[3, 2], [3, 1], [1, 2], [4, 2]]
+    map_name: puzzle-03
+    seed: 9
+    targets_xy: [[0, 3], [2, 4], [2, 1], [0, 2]]
+  Scenario-468:
+    agents_xy: [[3, 2], [1, 2], [4, 1], [1, 4]]
+    map_name: puzzle-04
+    seed: 9
+    targets_xy: [[0, 3], [3, 0], [0, 2], [4, 0]]
+  Scenario-469:
+    agents_xy: [[2, 3], [3, 4], [2, 1], [0, 2]]
+    map_name: puzzle-05
+    seed: 9
+    targets_xy: [[2, 0], [3, 0], [2, 2], [2, 4]]
+  Scenario-470:
+    agents_xy: [[3, 4], [1, 4], [4, 0], [4, 2]]
+    map_name: puzzle-06
+    seed: 9
+    targets_xy: [[3, 0], [2, 4], [4, 3], [2, 0]]
+  Scenario-471:
+    agents_xy: [[2, 4], [1, 2], [4, 0], [1, 4]]
+    map_name: puzzle-07
+    seed: 9
+    targets_xy: [[0, 3], [2, 2], [0, 2], [3, 4]]
+  Scenario-472:
+    agents_xy: [[3, 2], [1, 2], [4, 1], [1, 4]]
+    map_name: puzzle-08
+    seed: 9
+    targets_xy: [[0, 3], [3, 0], [0, 2], [4, 0]]
+  Scenario-473:
+    agents_xy: [[3, 1], [0, 3], [3, 2], [3, 3]]
+    map_name: puzzle-09
+    seed: 9
+    targets_xy: [[2, 4], [2, 0], [3, 4], [0, 4]]
+  Scenario-474:
+    agents_xy: [[4, 0], [0, 4], [1, 4], [0, 3]]
+    map_name: puzzle-10
+    seed: 9
+    targets_xy: [[2, 3], [2, 0], [4, 2], [2, 2]]
+  Scenario-475:
+    agents_xy: [[3, 0], [1, 0], [3, 1], [3, 4]]
+    map_name: puzzle-11
+    seed: 9
+    targets_xy: [[2, 2], [2, 1], [4, 0], [1, 1]]
+  Scenario-476:
+    agents_xy: [[2, 3], [4, 2], [2, 1], [0, 2]]
+    map_name: puzzle-12
+    seed: 9
+    targets_xy: [[2, 0], [3, 2], [2, 2], [2, 4]]
+  Scenario-477:
+    agents_xy: [[3, 0], [1, 0], [3, 1], [3, 3]]
+    map_name: puzzle-13
+    seed: 9
+    targets_xy: [[2, 1], [1, 4], [4, 3], [1, 1]]
+  Scenario-478:
+    agents_xy: [[3, 3], [0, 4], [1, 3], [0, 3]]
+    map_name: puzzle-14
+    seed: 9
+    targets_xy: [[2, 4], [2, 0], [4, 1], [2, 3]]
+  Scenario-479:
+    agents_xy: [[3, 0], [1, 2], [4, 1], [1, 4]]
+    map_name: puzzle-15
+    seed: 9
+    targets_xy: [[0, 3], [2, 4], [0, 2], [4, 0]]
